@@ -1,15 +1,8 @@
 name: Demo GitHub Actions Workflow
-on: [push]
+'on':
+  - push
 jobs:
   Discover-GitHub-Actions-Workflows:
     runs-on: ubuntu-latest
     steps:
-     —run: echo "${{ github.event_name }} event automatically triggered this job."
-     —name: Checking out the repository’s code
-        uses: actions/checkout@v3
-     —run: echo "The runner has cloned your ${{ github.repository }} repository."
-     —run: echo "The workflow can now test your code with the runner."
-     —name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-     —run: echo " This job has a ${{ job.status }} status."
+      —run: echo "Hello world."
