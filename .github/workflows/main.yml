@@ -1,9 +1,12 @@
 name: Demo GitHub Actions Workflow
-'on':
-  - push
+
+on:
+  push:
+
 jobs:
   Discover-GitHub-Actions-Workflows:
     runs-on: ubuntu-latest
     steps:
-      —run: echo "Hello world."
-      —run: echo "Helloa sd world."
+      - run: echo "Hello world."
+      - run: echo "Helloa sd world."
+
